@@ -54,7 +54,7 @@ jobs:
           path: ${{ env.OUTPUT_PATH }}
 
       - name: Prepare create release issue action
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2.1.2
         with:
           node-version: "12.x"
 
