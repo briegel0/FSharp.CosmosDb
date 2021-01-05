@@ -48,7 +48,7 @@ jobs:
         run: echo ${{ env.package_version }} >> ${{ env.OUTPUT_PATH }}/version.txt
 
       - name: Publish release packages
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2.2.2
         with:
           name: packages
           path: ${{ env.OUTPUT_PATH }}
